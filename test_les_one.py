@@ -34,7 +34,7 @@ class TestLesson(unittest.TestCase):
         welcome_text = welcome_text_elt.text
 
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Ahtung ! Not work")
+        assert "Congratulations! You have successfully registered!" == welcome_text
 
         # ожидание чтобы визуально оценить результаты прохождения скрипта
         time.sleep(10)
@@ -78,7 +78,7 @@ class TestLesson(unittest.TestCase):
         welcome_text = welcome_text_elt.text
 
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Ahtung ! Not work")
+        assert "Congratulations! You have successfully registered!" == welcome_text
 
         # ожидание чтобы визуально оценить результаты прохождения скрипта
         time.sleep(10)
