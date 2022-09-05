@@ -1,26 +1,28 @@
 import pytest
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
+
+@pytest.fixture(scope="class")
+def prepare_faces():
+    print("^_^", "\n")
+    yield
+    print(":3", "\n")
 
 
-def test_exception1():
-    try:
-        browser = webdriver.Chrome()
-        browser.get("http://selenium1py.pythonanywhere.com/")
-        with pytest.raises(NoSuchElementException):
-            browser.find_element(By.CSS_SELECTOR, "button.btn")
-            pytest.fail("Не должно быть кнопки Отправить")
-    finally:
-        browser.quit()
+@pytest.fixture()
+def very_important_fixture():
+    print(":)", "\n")
 
-def test_exception2():
-    try:
-        browser = webdriver.Chrome()
-        browser.get("http://selenium1py.pythonanywhere.com/")
-        with pytest.raises(NoSuchElementException):
-            browser.find_element(By.CSS_SELECTOR, "no_such_button.btn")
-            pytest.fail("Не должно быть кнопки Отправить")
-    finally:
-        browser.quit()
+
+@pytest.fixture(autouse=True)
+def print_smiling_faces():
+    print(":-Р", "\n")
+
+
+class TestPrintSmilingFaces():
+    def test_first_smiling_faces(self, prepare_faces, very_important_fixture):
+        # какие-то проверки
+        pass
+
+    def test_second_smiling_faces(self, prepare_faces):
+        # какие-то проверки
+        pass
