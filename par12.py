@@ -7,7 +7,7 @@ import math
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-ans_t = ' '
+ans_t = []
 
 @pytest.fixture(scope="function")
 def browser():
