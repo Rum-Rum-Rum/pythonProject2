@@ -1,0 +1,17 @@
+1668539158461	geckodriver	INFO	Listening on 127.0.0.1:58212
+1668540425693	geckodriver	INFO	Listening on 127.0.0.1:59972
+1668540426208	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Rum\\AppData\\Local\\Temp\\rust_mozprofiler80VBG"
+1668540426638	Marionette	INFO	Marionette enabled
+1668540426644	Marionette	INFO	Listening on port 59982
+Read port: 59982
+1668540426774	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rum\\AppData\\Local\\Temp\\rust_mozprofiler80VBG\\search.json.mozlz4", (void 0)))
+1668540436925	Marionette	INFO	Stopped listening on port 59982
+1668540488911	geckodriver	INFO	Listening on 127.0.0.1:60080
+1668540489441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Rum\\AppData\\Local\\Temp\\rust_mozprofile9W9Z7v"
+1668540489889	Marionette	INFO	Marionette enabled
+1668540489895	Marionette	INFO	Listening on port 60090
+Read port: 60090
+1668540490139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rum\\AppData\\Local\\Temp\\rust_mozprofile9W9Z7v\\search.json.mozlz4", (void 0)))
+1668540498322	Marionette	INFO	Stopped listening on port 60090
